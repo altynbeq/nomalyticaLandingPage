@@ -1,6 +1,7 @@
 import React from "react";
 import optbg from './assets/optbg.png';
 import bg from './assets/optbg.png';
+// import { AnimatedBeam } from './componentsMain/AnimatedBeam';
 
 function Optimization() {
     return (
@@ -13,7 +14,7 @@ function Optimization() {
                                md:text-6xl sm:text-4xl">
                     Оптимизируйте финансовые процессы с Nomalytica
                 </h1>
-
+                {/* <AnimatedBeam /> */}
                 <p className="font-light text-lg w-[90%] max-w-2xl mb-8 text-black
                               md:text-xl sm:text-base">
                     Оставьте заявку на бесплатную консультацию и узнайте, как MetaBI может улучшить ваше управление финансами

@@ -6,6 +6,9 @@ import image2 from '../assets/leo/lazyWorkers.jpeg';
 import image3 from '../assets/leo/badBusinessPlan.jpg';
 import image4 from '../assets/leo/angryAtPapers.jpg';
 import image5 from '../assets/leo/happyBusi.jpg';
+import bg from '../assets/optbg.png';
+
+import ShimmerButton from '../componentsMain/ShimmerBtn';
 
 export const Problems = () => {
   const items = [
@@ -61,14 +64,15 @@ export const Problems = () => {
   };
 
   return (
-    <div className="flex m-10 flex-col items-center">
-      <div className="relative w-full flex justify-center text-center mb-10">
-        <div className="absolute mb-10 transform text-2xl text-center text-black font-normal font-['Inter']">
-          Создаём тренды IT‑образования
-        </div>
+    <div className="flex pb-10 px-10 flex-col items-center" style={{ backgroundImage: `url(${bg})`}} >
+      <div className="relative w-full flex justify-center text-center mb-1 py-6 overflow-hidden">
+        <h1 className="text-4xl font-bold text-white px-6 py-2 bg-[#302e81] transform -skew-x-12">
+          Улучшаем ведение бизнеса
+        </h1>
       </div>
 
-      <Slider {...settings} className="gap-1 max-w-[1358px] w-[100%] md:w-[90%] mt-8">
+
+      <Slider {...settings} className="gap-1 max-w-[1358px] w-[100%] md:w-[90%] ">
         {items.map((item, index) => (
           <div key={index} className="flex my-10 md:m-2 md:max-w-[90%] flex-col bg-neutral-100 rounded-xl overflow-hidden ">
             <div className="flex justify-center align-center bg-cover bg-center">
@@ -83,9 +87,7 @@ export const Problems = () => {
                 </span>
               ))}
             </p>
-            <button className="mt-4 ml-4 mb-10 bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300">
-              Узнать больше
-            </button>
+            <ShimmerButton className="mt-4 ml-4 mb-10 bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300" />
           </div>
         ))}
       </Slider>

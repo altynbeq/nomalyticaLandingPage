@@ -20,11 +20,10 @@ function App() {
       <Problems />
       <FamiliarSection />
       <ComparisonSection />
-      <DemoRegistration />
-
-      <Plan2 />
+      {/* <DemoRegistration /> */}
       <Optimization />
       <FeatureSection />
+      <Plan2 />
       <Footer />
     </div>
   );

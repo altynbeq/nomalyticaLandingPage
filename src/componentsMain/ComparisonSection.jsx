@@ -19,7 +19,7 @@ const ComparisonSection = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden justify-center items-center flex-col px-20 pt-3 pb-36 bg-white max-md:px-5 max-md:pb-24" style={{ backgroundImage: `url(${bg})` }}>
+    <section className="flex overflow-hidden justify-center items-center flex-col px-20 pt-3 pb-10 bg-white max-md:px-5 max-md:pb-24" style={{ backgroundImage: `url(${bg})` }}>
       <h1 className="self-center text-2xl font-medium leading-none text-center text-indigo-950 mt-10">
         Почему Excel не подходит для учета
       </h1>

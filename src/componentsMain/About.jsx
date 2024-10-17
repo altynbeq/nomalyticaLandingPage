@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import photo1 from "../assets/screenforbg.png";
 import bg from '../assets/optbg.png';
+import { RainbowButton } from "./RainbowBtn";
 
 export const About = () => {
   const [windowWidth, setWindowWidth] = useState(
@@ -23,19 +24,17 @@ export const About = () => {
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Section: Text */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <h1 className="text-black text-2xl md:text-4xl lg:text-6xl tracking-tight leading-tight font-normal max-w-xl">
-              Погрузитесь в IT {windowWidth >= 640 && <br />}
-              вместе с Яндекс {windowWidth >= 640 && <br />}
-              Лицеем
+            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-normal max-w-xl">
+              Аналитика бизнеса{windowWidth >= 640 && <br />}
+              <p className="text-[#302e81] font-bold"> в один клик {windowWidth >= 640 && <br />} </p>
+             
             </h1>
             <p className="mt-4 text-black text-base sm:text-lg leading-relaxed font-normal max-w-lg">
-              Бесплатные IT-программы для школьников с 13 лет, а также
-              {windowWidth >= 1024 && <br />} студентов колледжей
-            </p>
+            Все ключевые показатели вашего бизнеса всегда под рукой — в любое время из любого места.
+              {/* {windowWidth >= 1024 && <br />} студентов колледжей */}
+            </p> 
             <div className="mt-8">
-              <button className="bg-black border-2-solid rounded-[30px] p-2 transition duration-200">
-                <span className="text-white font-semibold">Записаться на Демо</span>
-              </button>
+              <RainbowButton className="gradient-bg border-2 border-solid rounded-[30px] p-2 transition duration-200" />
             </div>
           </div>
 
