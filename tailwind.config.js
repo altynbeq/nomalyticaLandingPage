@@ -2,17 +2,13 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'], // Content paths
   darkMode: 'class', // Dark mode
   theme: {
-    // fontFamily: {
-    //   display: ['Comfortaa', 'sans-serif'],
-    //   body: ['Comfortaa', 'sans-serif'],
-    // },
     extend: {
-      
       animation: {
         rainbow: "rainbow var(--speed, 2s) infinite linear",
         "shimmer-slide":
           "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        wiggle: "wiggle 2s ease-in-out infinite", // Анимация покачивания
       },
       keyframes: {
         "spin-around": {
@@ -38,6 +34,15 @@ module.exports = {
           "0%": { "background-position": "0%" },
           "100%": { "background-position": "200%" },
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-2deg)" },
+          "50%": { transform: "rotate(2deg)" },
+        },
+      },
+      animationDelay: {
+        100: "0.1s",
+        300: "0.3s",
+        500: "0.5s",
       },
       fontSize: {
         14: '14px',

@@ -16,53 +16,36 @@ export const About = () => {
 
   return (
     <div
-      className="w-screen mt-20 min-h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden"
+      className="w-screen mt-20 min-h-auto mt-24
+       bg-cover bg-center bg-no-repeat overflow-x-hidden"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-20">
-        {/* Container with text on the left and image on the right */}
+      <div className="max-w-[89%] mx-auto mr-0 px-4 pr-0 sm:px-6 sm:pr-0 lg:px-8 lg:pr-0 py-10 lg:py-20">
+        {/* Контейнер с текстом слева и изображением справа */}
         <div className="flex flex-col md:flex-row items-center">
-          {/* Left Section: Text */}
+          {/* Левая секция: текст */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-normal max-w-xl">
+            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-normal max-w-xl ml-12">
               Аналитика бизнеса{windowWidth >= 640 && <br />}
               <p className="text-[#302e81] font-bold"> в один клик {windowWidth >= 640 && <br />} </p>
-             
             </h1>
-            <p className="mt-4 text-black text-base sm:text-lg leading-relaxed font-normal max-w-lg">
-            Все ключевые показатели вашего бизнеса всегда под рукой — в любое время из любого места.
-              {/* {windowWidth >= 1024 && <br />} студентов колледжей */}
-            </p> 
-            <div className="mt-8">
+            <p className="mt-4 text-black text-base sm:text-lg leading-relaxed font-normal max-w-lg ml-12">
+              Все ключевые показатели вашего бизнеса всегда под рукой — в любое время из любого места.
+            </p>
+            <div className="mt-8 ml-12">
               <RainbowButton className="gradient-bg border-2 border-solid rounded-[30px] p-2 transition duration-200" />
             </div>
           </div>
 
-          {/* Right Section: Image */}
+          {/* Правая секция: изображение */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center">
             <img
-              className="object-contain max-w-md lg:max-w-lg xl:max-w-xl mt-10 md:w-full h-auto rounded-lg shadow-lg lg:ml-auto"
-              alt="Foto lyceum"
+              className="object-contain max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] mt-10 md:w-full h-auto rounded-lg lg:ml-12"
+              alt="Business analytics"
               src={photo1}
             />
           </div>
         </div>
-
-        {/* Footer Section */}
-        {/* <div className="flex md:flex-row flex-row justify-around mt-10 md:mt-20 w-full gap-6 sm:gap-4">
-          {[
-            "Погрузитесь в IT вместе с Яндекс Лицеем",
-            "Вдохновитесь на новый старт в IT",
-            "Освойте работу с YandexGPT",
-          ].map((text, index) => (
-            <div key={index} className="text-center w-full sm:w-1/3">
-              <div className="bg-[#00000014] h-0.5 rounded-sm mb-2" />
-              <p className="text-[#323232] text-sm sm:text-base leading-tight sm:leading-relaxed font-normal">
-                {text}
-              </p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );

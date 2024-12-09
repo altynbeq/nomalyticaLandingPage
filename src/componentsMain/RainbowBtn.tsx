@@ -22,7 +22,7 @@ export function RainbowButton({ children, className, ...props }) {
       )}
       {...props}
     >
-      <h2>Записаться на Демо</h2>
+      <h2 className="text-white">Записаться на Демо</h2>
     </button>
   );
 }

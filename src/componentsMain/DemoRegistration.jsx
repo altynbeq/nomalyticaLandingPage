@@ -19,7 +19,7 @@ function DemoRegistration() {
           </h2>
           <Button 
             text="Записаться на Демо" 
-            className="self-center px-6 py-5 mt-14 max-w-full text-lg font-semibold leading-loose bg-lime-300 rounded-[100px] text-violet-950 w-[220px] max-md:px-5 max-md:mt-10"
+            className="self-center px-6 py-5 mt-14 max-w-full text-lg font-semibold leading-loose bg-lime-300 rounded-[100px] text-white w-[220px] max-md:px-5 max-md:mt-10"
           />
         </div>
       </div>

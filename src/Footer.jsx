@@ -19,14 +19,14 @@ function Footer() {
         <div className="h-[300px]">
             <div className="text-inter text-2xl" style={textContainerStyle}>
                 <div className="flex flex-col justify-center align-center p-10 w-full  h-[100%]">
-                    <h1 className="font-bold text-2xl mb-8 text-black">Яндекс Образование</h1>
+                    <h1 className="font-bold text-2xl mb-8 text-black">Nomalytica support</h1>
                     <div className="flex flex-row gap-6  text-black  text-xl w-[55%]">
                         <ul className="leading-loose">
-                            <li>Яндекс Учебник</li>
+                            <li>Для крупного бизнеса</li>
                         </ul>
                         <ul className="leading-loose">
-                            <li>Школьникам</li>
-                            <li>Студентам</li>
+                            <li>Для среднего бизнеса</li>
+                            <li>Для малого бизнеса</li>
                             <li>Партнёрам</li>
                         </ul>
                         <ul className="leading-loose">

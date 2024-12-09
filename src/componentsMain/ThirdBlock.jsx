@@ -48,7 +48,7 @@ const cardData = [
     className: "absolute text-black bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 lg:translate-y-1/4"
   },
   {
-    text: "Сталкиваетесь с кассовыми разрывами и не всегда успеваете устранить их вовремя",
+    text: "Автоматизируйте процессы и тратьте время на развитие бизнеса, а не на рутину",
     className: "absolute text-black right-0 bottom-1/3 transform translate-x-1/4 translate-y-1/4 lg:right-0 lg:bottom-1/3"
   }
 ];
