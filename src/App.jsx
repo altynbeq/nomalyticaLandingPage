@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className="w-screen bg-white">
+    <div className="w-screen overflow-x-hidden bg-white">
       <NavBar
         onNavigate={scrollToSection}
         refs={{

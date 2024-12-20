@@ -78,6 +78,15 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
       },
+      scrollbar: {
+        hidden: {
+          '::-webkit-scrollbar': {
+            display: 'none',
+          },
+          '-ms-overflow-style': 'none', // IE and Edge
+          'scrollbar-width': 'none', // Firefox
+        },
+      },
     },
   },
   plugins: [
@@ -93,6 +102,9 @@ module.exports = {
           '&:hover': {
             boxShadow: theme('boxShadow.custom-hover'),
           },
+        },
+        '.overflow-hidden-x': {
+          overflowX: 'hidden',
         },
       });
     },

@@ -6,7 +6,7 @@ import bg from './assets/optbg.png';
 function Optimization() {
     return (
         <div 
-            className="flex flex-col h-screen items-center justify-center px-4 py-10 text-center bg-cover bg-center"
+            className="flex flex-col h-screen items-center justify-center px-4 py-10 text-center bg-center"
             style={{ backgroundImage: `url(${bg})` }}
         >
             <div className="flex flex-col items-center justify-center w-full bg-center bg-no-repeat">

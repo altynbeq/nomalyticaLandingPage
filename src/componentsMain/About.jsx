@@ -16,7 +16,7 @@ export const About = () => {
 
   return (
     <div
-      className="w-screen mt-20 min-h-auto mt-24
+      className="w-auto  min-h-auto mt-24
        bg-cover bg-center bg-no-repeat overflow-x-hidden"
       style={{ backgroundImage: `url(${bg})` }}
     >
