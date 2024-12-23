@@ -16,15 +16,14 @@ export const About = () => {
 
   return (
     <div
-      className="w-full max-h-screen 
-       bg-cover bg-center bg-no-repeat overflow-hidden mt-20 md:mt-0"
+      className="w-full min-h-screen max-h-screen bg-cover bg-center bg-no-repeat overflow-hidden mt-20 md:mt-0"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="max-w-[100%] mx-auto mr-0 px-4 pr-0 sm:px-6 sm:pr-0 lg:px-8 lg:pr-0 py-10 lg:py-20">
+      <div className="max-w-[100%] overflow-hidden mx-auto mr-0 px-4 pr-0 sm:px-6 sm:pr-0 lg:px-8 lg:pr-0 py-10 lg:py-20">
         {/* Контейнер с текстом слева и изображением справа */}
         <div className="flex flex-col md:flex-row items-center">
           {/* Левая секция: текст */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center">
+          <div className="w-full lg:w-1/2 overflow-hidden flex flex-col justify-center">
             <h1 className="text-black text-2xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-normal max-w-xl ml-12">
               Аналитика бизнеса{windowWidth >= 640 && <br />}
               <p className="text-[#302e81] font-bold"> в один клик {windowWidth >= 640 && <br />} </p>
@@ -38,9 +37,9 @@ export const About = () => {
           </div>
 
           {/* Правая секция: изображение */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center overflow-hidden max-w-full">
             <img
-              className="object-contain max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] mt-5 md:w-full h-auto rounded-lg lg:ml-12" // Reduced mt-10 to mt-5 to lift the image
+              className="object-contain max-w-full h-auto rounded-lg lg:ml-12 mt-5 md:w-full" // Reduced mt-10 to mt-5 to lift the image
               alt="Business analytics"
               src={photo1}
             />

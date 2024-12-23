@@ -89,7 +89,7 @@ const Problems = () => {
 
   return (
     <div
-      className="flex pb-10 px-10 flex-col items-center"
+      className="flex pb-10 overflow-hidden px-10 flex-col items-center"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="relative w-full flex justify-center text-center mb-1 py-6 overflow-hidden">
