@@ -17,15 +17,12 @@ function Optimization() {
                 {/* <AnimatedBeam /> */}
                 <p className="font-light text-lg w-[90%] max-w-2xl mb-8 text-black
                               md:text-xl sm:text-base">
-                    Оставьте заявку на бесплатную консультацию и узнайте, как Nomalytica может улучшить ваше управление финансами
+                    Оставьте заявку на бесплатную консультацию и узнайте, как Nomalytica может улучшить ваше управление бизнесом
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8 mb-8">
-                    <button className="bg-customBlue text-black rounded-full text-base md:text-lg px-6 py-3">
+                    <button className="bg-customBlue text-white rounded-full text-base md:text-lg px-6 py-3">
                         Оставить заявку
-                    </button>
-                    <button className="border-2 border-blueText text-base md:text-lg rounded-full px-6 py-3">
-                        Написать в WhatsApp
                     </button>
                 </div>
             </div>

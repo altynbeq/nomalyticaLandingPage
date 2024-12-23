@@ -11,53 +11,52 @@ import ShimmerButton from "../componentsMain/ShimmerBtn";
 
 const NextArrow = ({ onClick }) => (
   <div
-    className="absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer bg-gray-200 h-10 w-10 flex items-center justify-center rounded-full shadow hover:shadow-lg z-10"
+    className="absolute top-1/2 right-5 transform -translate-y-1/2 cursor-pointer bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full shadow hover:shadow-lg z-10"
     onClick={onClick}
   >
-    <span className="text-black text-lg font-bold">&gt;</span>
+    <span className="text-black text-2xl font-bold">&gt;</span>
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
   <div
-    className="absolute top-1/2 left-0 transform -translate-y-1/2 cursor-pointer bg-gray-200 h-10 w-10 flex items-center justify-center rounded-full shadow hover:shadow-lg z-10"
-    style={{ marginLeft: "-20px" }} // Отодвигаем стрелку левее
+    className="absolute top-1/2 left-5 transform -translate-y-1/2 cursor-pointer bg-gray-200 h-12 w-12 flex items-center justify-center rounded-full shadow hover:shadow-lg z-10"
     onClick={onClick}
   >
-    <span className="text-black text-lg font-bold">&lt;</span>
+    <span className="text-black text-2xl font-bold">&lt;</span>
   </div>
 );
 
-export const Problems = () => {
+const Problems = () => {
   const items = [
     {
       title: "Формирование отчетов",
       description:
-        "Сделайте увлекательным для детей путешествие по школьной программе с помощью интерактивных заданий",
+        "Автоматизируйте процесс формирования отчетов для улучшения бизнес-процессов и ускорения принятия решений. Простой и быстрый доступ к аналитике для ваших сотрудников.",
       image: image1,
     },
     {
       title: "Продуктивность сотрудников",
       description:
-        "Прокачивайтесь в решении прикладных IT‑задач и примеряйте профессию разработчика. Путь в IT начинается здесь",
+        "Повышайте продуктивность ваших сотрудников с помощью эффективных инструментов для отслеживания выполнения задач и оптимизации рабочего времени.",
       image: image2,
     },
     {
       title: "Принятие решений",
       description:
-        "Проходите учебные курсы от анализа данных до маркетинга, осваивайте новые навыки и трудоустраивайтесь в сфере IT",
+        "Сделайте процесс принятия решений более быстрым и точным, используя данные и аналитические инструменты для обоснованных решений в бизнесе.",
       image: image3,
     },
     {
       title: "Учет склада",
       description:
-        "Погрузитесь в глубины Data Science и фундаментально разберитесь во всех нюансах с помощью легендарной",
+        "Оптимизируйте учет склада с помощью автоматизированных систем, которые помогут избежать ошибок в инвентаризации и упростят процесс управления запасами.",
       image: image4,
     },
     {
       title: "Программы в университетах",
       description:
-        "Изучайте IT‑дисциплины в сильнейших вузах с преподавателями из Яндекса, получайте и применяйте на практике",
+        "Интегрируйте программы обучения в ведущих университетах для подготовки специалистов с актуальными навыками и знаниями, которые помогут вашему бизнесу расти.",
       image: image5,
     },
   ];
@@ -94,28 +93,29 @@ export const Problems = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="relative w-full flex justify-center text-center mb-1 py-6 overflow-hidden">
-        <h1 className="text-4xl font-bold text-white px-6 py-2 bg-[#302e81] transform -skew-x-12">
-          Улучшаем ведение бизнеса
-        </h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white px-4 sm:px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 transform -skew-x-12">
+              Улучшаем ведение бизнеса
+          </h1>
       </div>
+
 
       <Slider {...settings} className="gap-1 max-w-[1358px] w-[100%] md:w-[90%]">
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex my-10 md:m-2 md:max-w-[90%] flex-col bg-neutral-100 rounded-xl overflow-hidden"
+            className="flex  md:m-2 md:max-w-[90%] flex-col bg-neutral-100 rounded-xl overflow-hidden"
           >
-            <div className="flex justify-center align-center bg-cover bg-center">
+            <div className="flex justify-center items-center bg-cover bg-center">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-auto object-cover"
+                className="w-[100%] h-auto object-cover" // 80% of the original width to reduce by 20%
               />
             </div>
-            <div className="flex-grow text-black text-2xl font-normal p-6">
+            <div className="flex-grow text-center my-2 text-black text-xl font-normal h-12">
               {item.title}
             </div>
-            <p className="text-[#323232] font-normal px-6 flex-grow">
+            <p className="text-[#323232] font-normal text-center flex-grow h-32 overflow-hidden">
               {item.description.split("\n").map((line, i) => (
                 <span key={i}>
                   {line}
@@ -123,10 +123,14 @@ export const Problems = () => {
                 </span>
               ))}
             </p>
-            <ShimmerButton className="mt-4 ml-4 mb-10 bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300" />
+            <div className="flex justify-center ">
+              <ShimmerButton className="mt-4 mb-10 bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300" />
+            </div>
           </div>
         ))}
       </Slider>
     </div>
   );
 };
+
+export default Problems;

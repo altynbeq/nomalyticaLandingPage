@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { NavBar } from './componentsMain/Navbar';
 import { About } from './componentsMain/About';
-import { Problems } from './componentsMain/SecondBlock';
+import Problems from './componentsMain/SecondBlock';
 import FamiliarSection from './componentsMain/ThirdBlock';
 import ComparisonSection from './componentsMain/ComparisonSection';
 import DemoRegistration from './componentsMain/DemoRegistration';
